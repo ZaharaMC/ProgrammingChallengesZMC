@@ -1,0 +1,51 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       ":initialize"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "class Gene \n",
+    "\n",
+    "  attr_accessor :gene_ID  \n",
+    "  attr_accessor :gene_name\n",
+    "  attr_accessor :mutant_phenotype\n",
+    "  \n",
+    "  def initialize (params = {})\n",
+    "    @gene_ID = params.fetch(:gene_ID, 'AT0G00000')\n",
+    "    @gene_name = params.fetch(:gene_name, \"some_name\")\n",
+    "    @mutant_phenotype = params.fetch(:mutant_phenotype, \"some_characteristic_phenotype\")\n",
+    "  end\n",
+    "  \n",
+    "end\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Ruby 2.6.3",
+   "language": "ruby",
+   "name": "ruby"
+  },
+  "language_info": {
+   "file_extension": ".rb",
+   "mimetype": "application/x-ruby",
+   "name": "ruby",
+   "version": "2.6.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
